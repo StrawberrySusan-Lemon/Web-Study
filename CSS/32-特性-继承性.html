@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 控制文字属性都可以将继承，不是控制文字属性不可以继承 */
+        div{
+            color: rgb(229, 106, 18);
+            font-weight: 500;
+            /* 宽度不是文字属性，继承不了 */
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        div里面的文字
+        <span>div里面的span</span>
+    </div>
+</body>
+</html>
