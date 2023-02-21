@@ -8,10 +8,13 @@
 </head>
 <body>
     <script>
-        document.write('我愿意')
-        document.write('<h1>我愿意</h1>')
-        console.log('我是用来测试的') 
-        prompt('您今年多大了？')
+        // var可以先声明在使用，不合理。
+        // var声明过的变量可以重复声明，不合理。
+        // age = 18
+        // var age
+        var age = 18
+        var age = 19
+        document.write(age)
     </script>
 </body>
 </html>
