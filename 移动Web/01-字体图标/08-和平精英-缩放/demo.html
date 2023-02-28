@@ -36,31 +36,29 @@
         }
 
         .box .pic::after {
-            /* 播放按钮压在图片上面 - 居中 */
             position: absolute;
             left: 50%;
             top: 50%;
-            /* margin-left: -29px;
-            margin-top: -29px; */
-            /* transform: translate(-50%, -50%); */
+        
+            margin-left: -29px;
+            margin-top: -29px;
+
+
 
             content: '';
             width: 58px;
             height: 58px;
             background-image: url(./images/play.png);
 
-            /* 大图 */
-            transform: translate(-50%, -50%) scale(5);
 
-            /* 透明,看不见 */
+
+            transform: scale(5);
             opacity: 0;
-            transition: all .5s;
-        }
-
-        /* lihover的时候,  谁变小pic::after */
+            transition: all 0.5s;
+        } 
         .box li:hover .pic::after {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.5;
+            transform: scale(1);
         }
     </style>
 </head>
