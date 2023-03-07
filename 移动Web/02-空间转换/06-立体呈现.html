@@ -18,15 +18,12 @@
 
         .cube div {
             position: absolute;
-            left: 0;
-            top: 0;
             width: 200px;
             height: 200px;
         }
 
         .front {
             background-color: orange;
-            /* 向我走近200px */
             transform: translateZ(200px);
         }
 
@@ -34,9 +31,8 @@
             background-color: green;
         }
 
-        /* cube hover 为了看空间感效果 */
         .cube:hover {
-            transform: rotateY(90deg);
+            transform: rotateY(60deg);
         }
     </style>
 </head>
