@@ -26,12 +26,10 @@
             line-height: 40px;
             transition: all .5s;
             transform-style: preserve-3d;
-
-            /* 旋转: 让大家在写代码的过程中看到立体盒子 */
+            /* 旋转只是为了在写代码的过程中看到立体盒子 */
             /* transform: rotateX(-20deg) rotateY(30deg); */
 
-            /* 测试缩放效果 */
-            /* transform: scale3d(0.5, 1.1, 2); */
+            transform: scale3d(0.5, 1.1, 2);
         }
 
         .navs li a {
@@ -53,14 +51,13 @@
         
         .navs li a:last-child {
             background-color: orange;
-            /* 躺平x轴旋转  立方体的顶部,位移z(确保看到这个盒子) */
             transform: rotateX(90deg) translateZ(20px);
         }
 
-        /* li:hover 立方体旋转 */
         .navs li:hover {
             transform: rotateX(-90deg);
         }
+
     </style>
 </head>
 
