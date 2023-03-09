@@ -1,0 +1,97 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height:100%;
+    background: url(../images/f1_1.jpg) no-repeat center 0;
+    
+    /* background-size: contain; */
+
+    /* 图片等比例缩放，图片完全覆盖到整个盒子，可能导致图片显示不全 */
+    background-size: cover;
+}
+
+.cloud img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.cloud img:nth-child(1) {
+    margin-left: -300px;
+    top: 20px;
+    animation: cloud 1s infinite alternate;
+}
+.cloud img:nth-child(2) {
+    margin-left: 400px;
+    top: 100px;
+    animation: cloud 1s infinite alternate 0.2s;
+}
+.cloud img:nth-child(3) {
+    margin-left: -550px;
+    top: 200px;
+    animation: cloud 1s infinite alternate 0.4s;
+}
+
+@keyframes cloud {
+    to {
+        transform: translateX(20px);
+    }
+}
+
+.san {
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    margin-left: -380px;
+    animation: san 1.5s infinite alternate;
+}
+
+@keyframes san {
+    to {
+        transform: translateY(30px);
+    }
+}
+
+.tip img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.tip img:nth-child(1) {
+    width: 100px;
+    margin-left: -350px;
+    top: 650px;
+    animation: tip 0.8s infinite alternate;
+}
+.tip img:nth-child(2) {
+    width: 100px;
+    margin-left: -150px;
+    top: 650px;
+    animation: tip 0.8s infinite alternate 0.2s;
+}
+.tip img:nth-child(3) {
+    width: 100px;
+    margin-left: 40px;
+    top: 650px;
+    animation: tip 0.8s infinite alternate 0.5s ;
+}
+.tip img:nth-child(4) {
+    width: 100px;
+    margin-left: 200px;
+    top: 650px;
+    animation: tip 0.8s infinite alternate 0.7s;
+}
+
+@keyframes tip {
+    to {
+        transform: translateY(30px);
+    }
+}
