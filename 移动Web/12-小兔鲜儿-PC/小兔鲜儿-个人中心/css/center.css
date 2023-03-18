@@ -1,0 +1,75 @@
+.xtx-body {
+    padding: 30px 0 85px;
+    background-color: #f6f6f6;
+}
+
+.xtx-body .wrapper {
+    display: flex;
+}
+
+
+
+/* 侧边栏 */
+.xtx-body .aside {
+    width: 227px;
+    min-height: 500px;
+    margin-right: 18px;
+    background-color: bisque;
+}
+
+
+
+
+
+/* 主体内容 */
+.xtx-body .main {
+    flex: 1;
+    min-height: 500px;
+    /* background-col      or: brown; */
+}
+
+
+
+/* 账户概览 */
+.overview {
+    display: flex;
+    height: 132px;
+    margin-bottom: 18px;
+    padding: 20px 0;
+    background-color: #fff;
+
+}
+
+
+.overview div {
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+
+.over div:first-child {
+    border-right: 1px solid #f4f4f4;
+}
+
+.overview div a img {
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.overview div span {
+    font-size: 25px;
+    color: #e05e30;
+}
+
+.overview div a p {
+    font-size: 16px;
+}
+
+
+
+.overview div a:last-child img {
+    width: 18px;
+}
