@@ -14,10 +14,14 @@
     width: 227px;
     min-height: 500px;
     margin-right: 18px;
-    background-color: bisque;
+    /* background-color: bisque; */
+    background-color: #fff;
 }
 
-
+.xtx-body .self .txt p:first-child {
+    font-size: 18px;
+    color:brown;
+}
 
 
 
@@ -26,6 +30,13 @@
     flex: 1;
     min-height: 500px;
     /* background-col      or: brown; */
+}
+
+
+.xtx-body .aside .self {
+    width: 230px;
+    height: 230px;
+    padding: 47px 76px 30px 67px;
 }
 
 
@@ -73,3 +84,193 @@
 .overview div a:last-child img {
     width: 18px;
 }
+
+
+/* 公共样式 */
+.pannel {
+    padding: 28px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+
+
+.pannel .pannel-title {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    border-bottom: 1px solid #f4f4f4;
+}  
+
+
+.pannel .pannel-title h4 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 400;
+}
+
+
+
+.pannel .pannel-title a {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #999;
+}
+
+
+.orders li {
+    display: flex;
+    height: 137px;
+    margin-top: -1px;
+    margin-bottom: 20px;
+    border: 1px solid #f4f4f4;
+}
+
+
+.orders li:last-child {
+    margin-bottom: 0;
+}
+
+
+.orders li .goods {
+    display: flex;
+    padding: 17px 0 14px 12px;
+    flex: 1;
+    margin-right: 120px;
+    align-items: center;
+}
+
+.orders li .status {
+    width: 120px;
+}
+
+
+
+.orders .goods .pic {
+    width: 107px;
+    height: 107px;
+}
+
+.orders .goods .pic1 {
+    width: 105px;
+    height: 105px;
+}
+.orders .goods .txt {
+    flex: 1;
+    width: 0;
+}
+
+
+.orders .goods .txt h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.orders .goods .txt p {
+    font-size: 14px;
+    color: #999;
+}
+
+.orders li .pay {
+    width: 200px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+
+.orders li .action {
+    width: 180px;
+    
+}
+
+
+.orders li .action {
+    width: 180px;
+}
+
+
+.orders li .common {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+.orders li .action a:first-child {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color:#5eb69c ;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.red {
+    color:#9a2e1f ;
+}
+
+
+.orders li .status {
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    /* margin-right: 40px; */
+    
+}
+
+
+.orders li .status p {
+	font-size: 14px;
+	color: #e05e30;
+    /* line-height: 137px; */
+}
+
+.orders li .status span {
+    font-size: 14px;
+    color: #999;
+}
+
+
+
+
+
+/* 收藏的商品 */
+
+.collect .history {
+    display: flex;
+    width: 930px;
+    height: 260px;
+    margin: 20px 30px 35px 30px;
+}
+.collect .history li {
+    margin-top: 15px;
+    flex: 1;
+}
+.collect .history li p {
+    font-size: 16px;
+}
+.collect .history li p:last-child {
+    color: #9a2e1f;
+}
+.collect .history li p:last-child i {
+    font-size: 22px;
+}
+.collect .history img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
