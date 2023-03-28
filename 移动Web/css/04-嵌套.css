@@ -5,7 +5,7 @@
   color: aqua;
 }
 .father .son:hover {
-  color: black;
+  color: red;
 }
 .father:hover {
   color: antiquewhite;
