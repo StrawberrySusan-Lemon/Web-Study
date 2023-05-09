@@ -51,7 +51,7 @@
                 var userpwd = userpwdElt.value;
                 var userpwd2 = userpwd2Elt.value;
                 if (!/^[0-9]*$/.test(userpwd2)) {
-                    pwdErrorSpan.innerText = "数字";
+                    pwdErrorSpan.innerText = "必须为数字";
                     return
                 }
                 if (userpwd != userpwd2) {
