@@ -87,9 +87,20 @@ body {
     .four {
         margin-right: (10 / @vw);
     }
+    .four:hover {
+        color: #3984c2;
+    }
+    
+    .six img:hover {
+        color: #338bd3;
+    }
     .five a{
         text-decoration: none;
         color: #fff;
+    }
+    .five a:hover {
+        display: block;
+        color: #3984c2;
     }
     .six img{
         width: (2 / @vw);
@@ -132,6 +143,25 @@ body {
     padding-left: (25 / @vw);
 }
 
+
+.body1 {
+    padding-left: (30 / @vw);
+    .right{
+        padding-top: (10 / @vw);
+        padding-right: (20/ @vw);
+    }
+    .right img {
+        width: (150 / @vw);
+    }
+    .bottom {
+        padding-top: (3 / @vw);
+        display: flex;
+    }
+    .bottom img {
+        padding-right: (3 / @vw);
+        width: (16 / @vw);
+    }
+}
 
 @media (max-width:955px) {
     .wrap {

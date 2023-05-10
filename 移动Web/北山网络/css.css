@@ -80,9 +80,19 @@ body {
 .nav .four {
   margin-right: 2.66666667vw;
 }
+.nav .four:hover {
+  color: #3984c2;
+}
+.nav .six img:hover {
+  color: #338bd3;
+}
 .nav .five a {
   text-decoration: none;
   color: #fff;
+}
+.nav .five a:hover {
+  display: block;
+  color: #3984c2;
 }
 .nav .six img {
   width: 0.53333333vw;
@@ -121,6 +131,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-left: 6.66666667vw;
+}
+.body1 {
+  padding-left: 8vw;
+}
+.body1 .right {
+  padding-top: 2.66666667vw;
+  padding-right: 5.33333333vw;
+}
+.body1 .right img {
+  width: 40vw;
+}
+.body1 .bottom {
+  padding-top: 0.8vw;
+  display: flex;
+}
+.body1 .bottom img {
+  padding-right: 0.8vw;
+  width: 4.26666667vw;
 }
 @media (max-width: 955px) {
   .wrap {
