@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow: hidden;
+}
 .wrap {
   margin-top: 0.53333333vw;
   padding-left: 8vw;
@@ -149,6 +155,49 @@ body {
 .body1 .bottom img {
   padding-right: 0.8vw;
   width: 4.26666667vw;
+}
+.body1 .left {
+  width: 26.66666667vw;
+  padding-right: 13.33333333vw;
+  float: right;
+}
+.body1 .left .ti {
+  padding-top: 0.53333333vw;
+  color: #fff;
+  font-size: 1.06666667vw;
+}
+.body1 .left img {
+  width: 21.33333333vw;
+  padding-top: 2.66666667vw;
+}
+.body1 .seven {
+  display: flex;
+  color: #AAAAAA;
+  font-size: 0.8vw;
+  padding-top: 0.8vw;
+}
+.body1 .eight {
+  width: 10.66666667vw;
+  padding-left: 8vw;
+  color: #FFFFFF;
+  font-size: 0.8vw;
+}
+.body1 .nine {
+  width: 10.66666667vw;
+  padding-left: 6.4vw;
+  color: #FFFFFF;
+  font-size: 0.8vw;
+}
+.body1 .pi3 {
+  position: relative;
+}
+.body1 .pi4 {
+  left: 9.86666667vw;
+  top: 0.53333333vw;
+  position: absolute;
+}
+.body1 .pi4 img {
+  width: 1.33333333vw;
 }
 @media (max-width: 955px) {
   .wrap {

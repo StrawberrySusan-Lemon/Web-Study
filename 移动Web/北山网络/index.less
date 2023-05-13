@@ -6,6 +6,12 @@
 
 @vw:3.75vw;
 
+html{
+    overflow-x: hidden;
+}
+body {
+    overflow: hidden;
+}
 .wrap {
     margin-top: (2 / @vw);
     padding-left: (30 / @vw);
@@ -160,6 +166,50 @@ body {
     .bottom img {
         padding-right: (3 / @vw);
         width: (16 / @vw);
+    }
+    .left {
+        width: (100 / @vw);
+        padding-right: (50/ @vw);
+        float: right;
+        .ti {
+            padding-top: (2 / @vw);
+            color: #fff;
+            font-size: (4 / @vw);
+        }
+    }
+
+    .left img {
+        width: (80 / @vw);
+        padding-top: (10 / @vw);
+    }
+    .seven {
+        display: flex;
+        color: #AAAAAA;
+        font-size:( 3 / @vw) ;
+        padding-top: (3 / @vw);
+    }
+    .eight {
+        width: (40 / @vw);
+        padding-left: (30 / @vw);
+        color: #FFFFFF;
+        font-size: (3 / @vw);
+    }
+    .nine {
+        width: (40 / @vw);
+        padding-left: (24 / @vw);
+        color: #FFFFFF;
+        font-size: (3 / @vw);
+    }
+    .pi3 {
+        position: relative;
+    }
+    .pi4 {
+        left: (37 / @vw);
+        top: (2 / @vw);
+        position: absolute;
+    }
+    .pi4 img {
+        width: (5 / @vw);
     }
 }
 
