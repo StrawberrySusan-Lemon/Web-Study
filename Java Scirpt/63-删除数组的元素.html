@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['red','green','blue']
+        // 删除的最后一个元素
+        // arr.pop()
+        // console.log(arr)
+
+
+        // 删除的第一个元素
+        // arr.shift()
+        // shift是删除最后一个，  unshift是加，在前面加
+        // document.write(arr)
+
+
+        // 重点删除 arr.splice(从哪里开始删，删几个)
+        // 就把green删掉
+        // 第一个一是指从索引号是1 的位置开始删
+        // 2是指 删除2个
+        // arr.splice (1,2)
+
+        // 从索引号是1 的位置开始删，全部删掉
+        arr.splice(1)
+        console.log(arr)
+    </script>
+</body>
+</html>
