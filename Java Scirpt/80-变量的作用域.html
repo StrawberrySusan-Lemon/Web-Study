@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.全局变量，都可以使用
+        // let num = 10
+        // console.log(num)
+        // function fun() {
+        //     console.log(num)
+        // }
+        // fun()
+        // if (ture) {
+        //     console.log(num)
+        // }
+
+
+
+        // 2.在局部作用域上，变量是局部变量
+        function fn() {
+            let num = 10
+            console.log(num)
+            function fn1 () {
+                console.log(num)
+                let num2 = 20
+            }
+            fn1()
+            console.log(num2)
+        }
+        fn()
+        console.log(num)
+        // 3.块级变量
+        if (ture) {
+            let num = 10
+        }
+        // conlog.log(num)
+        for (let i = 0; i < 5;i++) {
+            console.log(i)
+        }
+        console.log(i)
+
+
+
+
+
+
+        function fn(x, y) {
+            // x 和 y 可以看做是 局部变量
+            document.write(x + y)
+        }
+        fn(1, 2)
+        // console.log(x) 错误了
+    </script>
+</body>
+</html>
