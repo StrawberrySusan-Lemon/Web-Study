@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>我是一个盒子</div>
+    <div>我是er个盒子</div>
+    <div class="three">我是san个盒子</div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <span>jiuyyige</span>
+    <script>
+        //获取元素
+        //document.querySelector('div')变成一个对象   只能匹配第一个元素
+        // let div = document.querySelector('.three ')
+        // console.log(div)
+
+        // let li = document.querySelector('ul li:last-child')
+        // console.log(li)
+
+
+        let lis = document.querySelectorAll('ul li')
+        console.log(lis)
+        for (let i = 0; i < lis.length; i++) {
+            console.log(lis[i])
+        }
+
+        let span = document.querySelectorAll('span')
+        console.log(span)
+
+    </script>
+</body>
+</html>
