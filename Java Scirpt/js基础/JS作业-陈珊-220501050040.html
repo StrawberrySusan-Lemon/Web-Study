@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>注册页面</title>
+    <style type="text/css">
+        span {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = function () {
+            var usernameErrorSpan = document.getElementById("usernameError");
+            var usernameElt = document.getElementById("username");
+            usernameElt.onblur = function () {
+                var username = usernameElt.value;
+                username = username.trim();
+                if (username === "") {
+                    usernameErrorSpan.innerText = "用户名不能为空";
+                } else {
+                    if (username.length < 7 || username.length > 12) {
+                        usernameErrorSpan.innerText = "用户名长度必须在[7-12]之间";
+                    } else {
+                        var regExp = /^[A-Za-z0-9]+$/;
+                        var ok = regExp.test(username);
+                    }
+                }
+            }
+
+
+            usernameElt.onfocus = function () {
+                if (usernameErrorSpan.innerText != "") {
+                    usernameElt.value = "";
+                }
+                usernameErrorSpan.innerText = "";
+            }
+
+
+            var pwdErrorSpan = document.getElementById("pwdError");
+
+            var userpwd2Elt = document.getElementById("userpwd2");
+
+            userpwd2Elt.onblur = function () {
+
+                var userpwdElt = document.getElementById("userpwd");
+                var userpwd = userpwdElt.value;
+                var userpwd2 = userpwd2Elt.value;
+                if (!/^[0-9]*$/.test(userpwd2)) {
+                    pwdErrorSpan.innerText = "必须为数字";
+                    return
+                }
+                if (userpwd != userpwd2) {
+
+                    pwdErrorSpan.innerText = "密码不一致";
+                } else {
+
+                }
+            }
+
+            userpwd2Elt.onfocus = function () {
+                if (pwdErrorSpan.innerText != "") {
+                    userpwd2Elt.value = "";
+                }
+                pwdErrorSpan.innerText = "";
+            }
+
+
+            var emailSpan = document.getElementById("emailError");
+
+            var emailElt = document.getElementById("email");
+            emailElt.onblur = function () {
+
+                var email = emailElt.value;
+                var emailRegExp = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                var ok = emailRegExp.test(email);
+                if (ok) {
+
+                } else {
+
+                    emailSpan.innerText = "邮箱地址不合法";
+                }
+            }
+
+
+            emailElt.onfocus = function () {
+                if (emailSpan.innerText != "") {
+                    emailElt.value = "";
+                }
+                emailSpan.innerText = "";
+            }
+
+
+            var submitBtnElt = document.getElementById("submitBtn");
+            submitBtn.onclick = function () {
+                usernameElt.focus();
+                usernameElt.blur();
+
+                userpwd2Elt.focus();
+                userpwd2Elt.blur();
+
+                emailElt.focus();
+                emailElt.blur();
+
+            }
+        }
+    </script>
+    <form id="userForm" method="get">
+        用户名：<input type="text" name="username" id="username" /><span id="usernameError"></span>
+        <br>
+        <br>
+        密码：<input type="text" name="userpwd" id="userpwd" />
+        <br>
+        <br>
+        确认密码：<input type="text" id="userpwd2" /><span id="pwdError"></span>
+        <br>
+        <br>
+        邮箱：<input type="text" name="email" id="email" /><span id="emailError"></span>
+        <br>
+        <br>
+    </form>
+
+</body>
+
+</html>
