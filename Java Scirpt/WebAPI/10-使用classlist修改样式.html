@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .active {
+            width: 300px;
+            height: 300px;
+            background-color: hotpink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div ></div>
+    <script>
+        // // 1.获取元素
+        // let num = document.querySelector('div')
+        let box = document.querySelector('div')
+        //add是一个方法 添加 追加
+        // box.classlist.add('active')
+        //remove() 移除 类
+        // box.classList.remove('one')
+
+        //切换类 有就删除  没有就补上
+        box.classList.toggle('one')
+    </script>
+</body>
+</html>
