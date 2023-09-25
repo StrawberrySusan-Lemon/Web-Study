@@ -36,6 +36,7 @@
         }
 
         .result-list {
+            display: none;
             position: absolute;
             left: 0;
             top: 48px;
@@ -71,7 +72,14 @@
         </ul>
     </div>
     <script>
-
+        //1.获取元素  input
+        let search = document.querySelector('input[type=search]')
+        //2.事件监听 获得光标时间  focus
+        search.addEventListener('focus',function () {
+            //显示下拉菜单
+            //文本框变色
+            search.classList.add('search')
+        })
     </script>
 </body>
 </html>
