@@ -28,6 +28,7 @@
             line-height: 48px;
             border: 1px solid #e0e0e0;
             outline: none;
+            transition: all .3s;
 
         }
 
@@ -73,12 +74,21 @@
     </div>
     <script>
         //1.获取元素  input
-        let search = document.querySelector('input[type=search]')
+        let search = document.querySelector('input')
+        let list = document.querySelector('.result-list')
         //2.事件监听 获得光标时间  focus
         search.addEventListener('focus',function () {
             //显示下拉菜单
+            list.style.display ='block'
             //文本框变色
             search.classList.add('search')
+        })
+        //3.事件监听  失去光标事件  blur
+        search.addEventListener('blur', function () {
+            //隐藏下拉菜单
+            list.style.display = 'none'
+            //文本框去色
+            search.classList.remove('search')
         })
     </script>
 </body>
