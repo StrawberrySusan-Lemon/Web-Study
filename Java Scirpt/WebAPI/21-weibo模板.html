@@ -36,8 +36,13 @@
             //2.绑定事件 用户输入事件  input
             area.addEventListener('input', function () {
                 // console.log('测试中')
-                //不断得到文本域里面的字符长度123
-                console.log(area.value)
+                //不断得到文本域里面的字符长度、
+                //area.value 可以得到的值
+                // console.log(area.value)
+                //area.value.length  得到输入字符的长度
+                // console.log(area.value.length)
+                useCount.innerHTML = area.value.length
+                
             })
     </script>
 </body>
