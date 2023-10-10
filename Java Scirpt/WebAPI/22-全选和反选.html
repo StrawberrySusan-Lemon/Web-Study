@@ -75,7 +75,8 @@
     <script>
         //1.获取元素   全选   和   ck  小复选框
         let all = document.querySelector('#checkAll')
-        let cks = document.querySelectorAll('.ck')   
+        let cks = document.querySelectorAll('.ck')  
+        let span = document.querySelector('span')
         //2.事件监听   全选按钮
         all.addEventListener('click', function() {
             // console.log(all.checked)
@@ -83,6 +84,15 @@
             //因为三个按钮在伪数组里面，我们需要遍历的方式，挨着取出来，依次给值
             for( let i = 0; i < cks.length; i++) {
                 cks[i].checked = all.checked
+            }
+
+
+            // 当我们的全选按钮处于选中状态，则可以改为取消
+            if(all.checked  === true) {
+                // console.log('要改')
+                span.innerHTML = '取消'
+            } else {
+                span.innerHTML = '全选'
             }
         })
     </script>
