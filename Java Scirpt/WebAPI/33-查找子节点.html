@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点击</button>
+    <ul>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+    </ul>
+    <script>
+        let btn = document.querySelector('button')
+        let ulm = document.querySelector('ul')
+        btn.addEventListener('click', function(){
+            // console.log(ul.children)
+            for(let i = 0; i < ulm.children.length; i++){
+                ulm.children[i].style.color = 'red'
+            }
+        })
+        ulm.children[0].style.color = 'green'
+        // console.log(ul.childNodes)
+    </script>
+</body>
+</html>
